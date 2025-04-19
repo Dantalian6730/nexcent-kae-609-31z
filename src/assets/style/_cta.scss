@@ -1,0 +1,22 @@
+.cta {
+    background-color: $light;
+    padding: 60px 0;
+    margin-top: 50px;
+    text-align: center;
+
+    @media (max-width: $breakpoints-md) 
+    {
+        margin-top: 40px;
+    }
+
+    h2 {
+        margin-bottom: 32px;
+    }
+
+    .buttom.primary-xl {
+        display: flex;
+        align-items: center;
+        margin: 0 auto;
+        gap: 8px;
+    }
+}

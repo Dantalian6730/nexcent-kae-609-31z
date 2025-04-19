@@ -1,0 +1,39 @@
+.desktop-navigation, .mobile-navigation {
+    position: fixed;
+    width: 100%;
+    background-color: $white;
+    z-index: 1;
+    box-shadow: $box-shadow;
+}
+
+.desktop-navigation__wrap {
+    padding: 22px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    @media (max-width: $breakpoints-lg) 
+    {
+        display: none;
+    }
+
+}
+
+.navigation__list {
+    display: flex;
+    gap: 50px;
+
+    @media (max-width: $breakpoints-xl) 
+    {
+        gap: 30px;
+    }
+}
+
+.navigation__list-element_active {
+    font-weight: 500;
+}
+
+.navigation__buttons {
+    display: flex;
+    gap: 14px;
+}

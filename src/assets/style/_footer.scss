@@ -1,0 +1,163 @@
+.footer {
+    background-color: $secondary;
+    padding: 60px 0 20px;
+}
+
+.footer__content {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 65px; /*  Изменил с 80 до 65 для выравнивания */
+
+    @media (max-width: $breakpoints-lg) 
+    {
+        flex-wrap: wrap;
+    }
+
+    @media (max-width: $breakpoints-md) 
+    {
+        row-gap: 40px;
+        column-gap: 100px;
+        justify-content: flex-start;
+        margin-bottom: 40px;
+    }
+
+}
+
+.footer__logo {
+    @media (max-width: $breakpoints-lg) 
+    {
+        width: 100%;
+        margin-bottom: 24px;
+    }
+
+    @media (max-width: $breakpoints-md) 
+    {
+        margin-bottom: 0;
+    }
+}
+
+.footer__item {
+
+    h4 {
+        color: $white;
+        margin-bottom: 24px;
+    }
+
+    .footer__item-links {
+        display: flex;
+        flex-direction: column;
+        gap: 0px; /*  Изменил с 12 до 0 для выравнивания */
+
+        li {
+            line-height: 20px;
+        }
+
+        a {
+            color: $white;;
+            font-size: 14px;
+        }
+
+        a:hover {
+            opacity: 0.5;
+            transition: 200ms;
+        }
+    }
+
+    li {
+        margin-bottom: 12px;
+
+        &:li:last-child {
+            margin-bottom: 0;
+        }
+    }
+
+    &:last-child {
+        text-align: right;
+        
+        @media (max-width: $breakpoints-md) 
+        {
+            width: 100%;
+            text-align: left;
+        }
+    }
+}
+
+.footer__form {
+    margin-bottom: 24px;
+    overflow: hidden;
+    width: 291px;
+    border-radius: 8px;
+    background-color: $light-secondary;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 8px;
+
+    @media (max-width: $breakpoints-sm ) 
+    {
+        width: 100%;
+    }
+
+    label {
+        width: 100%;
+    }
+
+    .footer__form-input {
+        height: 44px;
+        width: 100%;
+        background: transparent;
+        padding: 13px;
+        padding-right: 0;
+        outline: none;
+        color: $white;
+        letter-spacing: 1px;
+
+        &::placeholder{
+            color: #d9dbe1;
+            font-size: 14px;
+            line-height: 20px;
+        }
+     }
+     
+     .button_icon {
+        padding-left: 0;
+     }
+}
+
+.footer__item-social {
+    display: flex;
+    justify-content: flex-end;
+    gap: 16px;
+
+    a {
+        width: 32px;
+        height: 32px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: $light-secondary;
+        border-radius: 50%;
+    }
+
+    a:hover {
+        transform: scale(1.1);
+        transition: 200ms;
+    }
+
+    @media (max-width: $breakpoints-md) 
+    {
+        justify-content: flex-start;
+    }
+}
+
+.footer__copyright {
+    text-align: center;
+    font-size: 14px;
+    line-height: 20px;
+
+    @media (max-width: $breakpoints-lg) 
+    {
+        text-align: left;
+    }
+}

@@ -1,0 +1,49 @@
+.customer {
+    padding: 50px 0;
+
+    @media (max-width: $breakpoints-md) 
+    {
+        padding: 40px 0;
+    }
+}
+
+.customer__content {
+    display: flex;
+    gap: 24px;
+
+    img {
+        border-radius: 8px;
+        height: 100%;
+
+        @media (max-width: $breakpoints-sm ) 
+        {
+            height: auto;
+            width: 100%;
+        }
+    }
+
+    @media (max-width: $breakpoints-lg) 
+    {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+.customer__text p {
+        font-weight: 500;
+        margin-bottom: 16px;
+}
+
+.customer__text-info {
+    h4 {
+        color: $primary;        
+        font-weight: 600;
+        margin-bottom: 8px;
+    }
+
+    p {
+        font-weight: 400;
+        margin-bottom: 0;
+        color: #89939e;
+    }
+}
